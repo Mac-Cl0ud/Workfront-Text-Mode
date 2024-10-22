@@ -1,0 +1,4 @@
+description=Calculates the work hours between two dates.
+displayname=TEST Issue Resolution Time (WorkHourdiff)
+valueexpression=CONCAT(ROUND(WORKMINUTESDIFF({entryDate},{actualCompletionDate})/60,2), " hours")
+valueformat=double
