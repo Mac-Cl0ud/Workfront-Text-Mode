@@ -1,0 +1,7 @@
+displayname=Predecessor Task Name
+listdelimiter=&#xfeff;
+listmethod=nested(predecessors).lists
+textmode=true
+type=iterate
+valueexpression=IF({isCP}="true",{predecessor}.{name})
+valueformat=HTML
