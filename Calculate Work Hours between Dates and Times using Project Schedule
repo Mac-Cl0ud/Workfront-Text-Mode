@@ -1,0 +1,4 @@
+description=calculate the work hours between two dates based on project schedule
+displayname=Issue First Response Time 2
+valueexpression=ROUND(DIV(WORKMINUTESDIFF({actualStartDate},{entryDate},{project}.{scheduleID}),60),2)
+valueformat=HTML
