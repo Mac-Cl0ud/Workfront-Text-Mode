@@ -1,0 +1,11 @@
+# Requires two custom fields 
+## Field 1: Current Status
+IF({status}="NEW","New",IF({status}="INP","In Progress", IF({status}="AWF","Awaiting Feedback", IF({status}="CPL","Complete", IF({status}="ONH","On Hold", IF({status}="COM","Complete",{status})))))) 
+## Create this first, save and close the form before adding the next calculated field.
+
+## Field 2: Status History
+LEFT(IF(LEFT({DE:Status History},LEN(IF(ISBLANK({DE:Current Status}),"-",{DE:Current Status})))={DE:Current Status},{DE:Status History},CONCAT(IF(ISBLANK({DE:Current Status}),"-",{DE:Current Status})," (",$$NOW,") | ",{DE:Status History})),2000)
+## Create the field (status history) without the calculation first (save and close the form) then reopen the form to add the calculation. This is required since the calculation references the selfsame field.
+ 
+## EXAMPLE OUTPUT (latest status first)
+## Complete (3/7/23) | In Progress (3/2/23) | New (3/2/23) |
