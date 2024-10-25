@@ -1,0 +1,8 @@
+# Use this code in a report column to display the last note, limited to 140 characters, with name of commenter and date.
+valueexpression=IF(LEN({lastNote}.{noteText})>140,CONCAT(SUBSTR({lastNote}.{noteText},0,139),"... (open for more) -- ",{lastNote}.{owner}.{name}," on ",{lastNote}.{entryDate}),IF(LEN({lastNote}.{noteText})>0,CONCAT({lastNote}.{noteText}," -- ",{lastNote}.{owner}.{name}," on ", {lastNote}.{entryDate}))) 
+valueformat=HTML 
+displayname=Last Note 
+width=250 
+textmode=true
+querysort=lastNote:entryDate 
+usewidths=true
