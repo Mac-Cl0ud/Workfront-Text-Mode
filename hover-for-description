@@ -1,0 +1,16 @@
+# add this code to a report to insert a light blue icon that you can hover over to get the object description
+displayname=
+image.case.0.comparison.icon=true
+image.case.0.comparison.leftmethod=description
+image.case.0.comparison.lefttext=description
+image.case.0.comparison.operator=notblank
+image.case.0.comparison.operatortype=string
+image.case.0.comparison.righttext=
+image.case.0.comparison.truetext=/static/img/r15/icons/casebuilder/light_blue.gif
+image.namevalue=string(description)
+image.valuefield=description
+linkedname=direct
+shortview=false
+textmode=true
+valuefield=description
+valueformat=HTML
