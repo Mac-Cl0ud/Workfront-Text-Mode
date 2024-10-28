@@ -1,0 +1,8 @@
+# Display the Folder Name in a Document Report
+displayname=Folder
+listdelimeter=<br>
+listmethod=nested(folders).lists
+textmode=true
+type=iterate
+valueexpression={name}
+valueformat=HTML
