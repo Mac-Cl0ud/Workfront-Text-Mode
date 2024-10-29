@@ -1,0 +1,8 @@
+displayname=Active Milestones
+listdelimiter=
+listmethod=nested(tasks).lists
+textmode=true
+type=iterate
+valueexpression=IF(ISBLANK({milestoneID})=0,IF(ISBLANK({actualCompletionDate}),IF(ISBLANK({actualStartDate})=0,CONCAT({milestone}.{name},"" ""),"""")))
+valueformat=HTML
+width=100
