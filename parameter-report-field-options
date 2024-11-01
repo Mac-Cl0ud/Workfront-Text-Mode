@@ -1,0 +1,30 @@
+#display choices fields on paramater report
+##comma delimited for reporting purposes. use <br> instead for easy reading
+listdelimiter=,
+listmethod=nested(ParameterOptions).lists
+name=Custom Field Options
+textmode=true
+type=iterate
+valuefield=value
+valueformat=HTML
+width=150
+
+##show only ACTIVE (non-hidden) fields
+listdelimiter=<br>
+listmethod=nested(ParameterOptions).lists
+name=Active Custom Field Options
+textmode=true
+type=iterate
+valueexpression=IF({isHidden},"",CONCAT({isHidden},": ",{label}))
+valueformat=HTML
+width=150
+
+#show only HIDDEN fields
+listdelimiter=<br>
+listmethod=nested(ParameterOptions).lists
+name=Hidden Custom Field Options
+textmode=true
+type=iterate
+valueexpression=IF({isHidden},CONCAT({isHidden},": ",{label}),"")
+valueformat=HTML
+width=150
