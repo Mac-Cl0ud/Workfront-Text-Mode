@@ -1,0 +1,20 @@
+# Display an Image in a Report that Links to Project
+
+displayname=Link Project
+image.name=Link Project
+image.valuefield=URL
+link.linkproperty.0.name=projectID
+link.linkproperty.0.value=ID
+link.lookup=link.edit
+link.page=/view
+link.valuefield=objCode
+link.valueformat=val
+textmode=true
+type=image
+valueformat=
+
+## You must insert the URL for the image into the URL field in the project details, then use the above code
+to replace a column in text mode in the view area of the report, then any image linked via the URL in the
+project details will show up as a column. Images appear in their actual resolution so try to use small images!
+This example is for projects, but applies to any object with a URL in the system details.
+## Credit: http://lp.workfront.com/rs/758-USO-349/images/Chris%20Demigod.pdf
