@@ -25,7 +25,7 @@ This example is for projects, but applies to any object with a URL in the system
 https://github.com/Mac-Cl0ud/Workfront-Text-Mode/blob/main/display_image_in_report
 <hr>
 
-# Truncate Last Note and Dsplay as a Tweet
+# Truncate Last Note and Display as a Tweet
 Use this code in a report column to display the last note, limited to 140 characters, with name of commenter and date.
 
 ```
