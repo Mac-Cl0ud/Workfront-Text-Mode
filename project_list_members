@@ -7,3 +7,5 @@ textmode=true
 type=iterate
 valueexpression=CONCAT({user}.{name}," - ",{user}.{role}.{name})
 valueformat=HTML
+
+Credit: Randy Roberts
