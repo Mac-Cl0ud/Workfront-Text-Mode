@@ -1,0 +1,9 @@
+##List all users on the People tab of Project (Project Report of View)
+
+displayname=Project Users
+listdelimiter=<hr>
+listmethod=nested(projectUsers).lists
+textmode=true
+type=iterate
+valueexpression=CONCAT({user}.{name}," - ",{user}.{role}.{name})
+valueformat=HTML
