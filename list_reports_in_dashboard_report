@@ -1,6 +1,6 @@
 ##Add this text mode to a DASHBOARD report to list reports and calendars in the dashboard##
 
-column.2.displayname=Reports & Calendars  
+column.2.displayname=Reports & Calendars
 column.2.listdelimiter=<br>
 column.2.listmethod=nested(portalTabSections).lists
 column.2.sharecol=true
