@@ -1,0 +1,8 @@
+##Add Document Name and Link to Project Report (or other report)
+valueexpression=CONCAT({name},".",{currentVersion}.{ext}," - https://YOUR_INSTANCE_HERE.my.workfront.com/document/view?ID=",{ID})
+listdelimiter=<br>
+listmethod=nested(documents).lists
+valueformat=HTML
+displayname=Documents
+textmode=true
+type=iterate
