@@ -25,7 +25,7 @@ This example is for projects, but applies to any object with a URL in the system
 https://github.com/Mac-Cl0ud/Workfront-Text-Mode/blob/main/display_image_in_report
 <hr>
 
-# Truncate Last Note and Display as a Tweet
+## Truncate Last Note and Display as a Tweet
 Use this code in a report column to display the last note, limited to 140 characters, with name of commenter and date.
 
 ```
@@ -39,7 +39,7 @@ usewidths=true
 ```
 https://github.com/Mac-Cl0ud/Workfront-Text-Mode/blob/main/last-note-tweet
 
-# Display Attached Document Names & Links in Project Report
+## Display Attached Document Names & Links in Project Report
 Use this code to display a list of attached documents in a project, task, or issue report or view.
 
 ```
@@ -52,7 +52,7 @@ valueexpression=CONCAT({name},".",{currentVersion}.{ext}," - https://DOMAIN.my.w
 valueformat=HTML
 ```
 
-# Display Upcoming Time-off in User Report
+## Display Upcoming Time-off in User Report
 Add this column to a User report or view to display future time off dates for each user.
 
 ```
