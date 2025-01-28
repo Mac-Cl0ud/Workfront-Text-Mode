@@ -51,3 +51,14 @@ type=iterate
 valueexpression=CONCAT({name},".",{currentVersion}.{ext}," - https://DOMAIN.my.workfront.com/document/view?ID=",{ID})
 valueformat=HTML
 ```
+
+# Display Upcoming Time-off in User Report
+
+```
+displayname=Upcoming Time Off
+listdelimiter=<br>
+listmethod=nested(reservedTimes).lists
+type=iterate
+valueexpression=IF({endDate}>$$TODAY,CONCAT({startDate}," - ",{endDate}," "))
+valueformat=HTML
+```
