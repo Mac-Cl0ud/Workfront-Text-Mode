@@ -62,3 +62,4 @@ type=iterate
 valueexpression=IF({endDate}>$$TODAY,CONCAT({startDate}," - ",{endDate}," "))
 valueformat=HTML
 ```
+https://github.com/Mac-Cl0ud/Workfront-Text-Mode/blob/main/upcoming_time_off_in_user_report
