@@ -1,0 +1,14 @@
+## Calculate Work Hours between Dates and Times
+
+description=
+displayname=TEST Issue Resolution Time (WorkHourdiff)
+valueexpression=CONCAT(ROUND(WORKMINUTESDIFF({entryDate},{actualCompletionDate})/60,2), " hours")
+valueformat=double
+Reference: https://experienceleague.adobe.com/en/docs/workfront/using/reporting/reports/calculated-custom-data/calculated-data-expressions
+
+## Variant: Calculate Work Hours between Dates and Times taking into account a Project Schedule
+
+description=
+displayname=Issue First Response Time 2
+valueexpression=ROUND(DIV(WORKMINUTESDIFF({actualStartDate},{entryDate},{project}.{scheduleID}),60),2)
+valueformat=HTML
