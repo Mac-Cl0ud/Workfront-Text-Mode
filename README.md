@@ -38,3 +38,16 @@ querysort=lastNote:entryDate
 usewidths=true
 ```
 https://github.com/Mac-Cl0ud/Workfront-Text-Mode/blob/main/last-note-tweet
+
+# Display Attached Document Names and Links in Project Report
+Use this code to display a list of attached documents in a project, task, or issue report or view.
+
+```
+displayname=Documents
+listdelimiter=<br>
+listmethod=nested(documents).lists
+textmode=true
+type=iterate
+valueexpression=CONCAT({name},".",{currentVersion}.{ext}," - https://DOMAIN.my.workfront.com/document/view?ID=",{ID})
+valueformat=HTML
+```
