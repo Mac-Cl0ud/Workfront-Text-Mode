@@ -53,6 +53,7 @@ valueformat=HTML
 ```
 
 # Display Upcoming Time-off in User Report
+Add this column to a User report or view to display future time off dates for each user.
 
 ```
 displayname=Upcoming Time Off
