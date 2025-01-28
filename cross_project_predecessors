@@ -1,10 +1,22 @@
 ## Cross Project Predecessors (Task Report or View)
 Display Predecessor Project  Name in a Task Report or View
 
+# Predecessor Project  Name
+
 displayname=Predecessor Task Name
 listdelimiter=&#xfeff;
 listmethod=nested(predecessors).lists
 textmode=true
 type=iterate
 valueexpression=IF({isCP}="true",{predecessor}.{project}.{name})
+valueformat=HTML
+
+# Predecessor Task Name
+
+displayname=Predecessor Task Name
+listdelimiter=&#xfeff;
+listmethod=nested(predecessors).lists
+textmode=true
+type=iterate
+valueexpression=IF({isCP}="true",{predecessor}.{name})
 valueformat=HTML
