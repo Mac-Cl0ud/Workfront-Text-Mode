@@ -1,0 +1,8 @@
+## Filter for Objects Shared System Wide
+
+EXISTS:A:$$EXISTSMOD=EXISTS
+EXISTS:A:$$OBJCODE=ACSRUL
+EXISTS:A:accessorID=PUBLIC
+EXISTS:A:securityObjID=FIELD:ID
+
+Reference: https://experienceleaguecommunities.adobe.com/t5/workfront-questions/how-to-filter-a-project-program-or-portfolio-report-or-list/m-p/563522#M50932
