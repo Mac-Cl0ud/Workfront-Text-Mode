@@ -1,0 +1,8 @@
+## Display Upcoming Time Off in User Report
+
+displayname=Upcoming Time Off
+listdelimiter=<br>
+listmethod=nested(reservedTimes).lists
+type=iterate
+valueexpression=IF({endDate}>$$TODAY,CONCAT({startDate}," - ",{endDate}," "))
+valueformat=HTML
