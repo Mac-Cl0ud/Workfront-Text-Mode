@@ -1,0 +1,13 @@
+Add the following textmode to a report to show short, predefined text for a URL.
+
+displayname=COLUMN HEADER
+link.url=DE:Custom_Field
+linkedname=
+namekey=view.relatedcolumn
+namekeyargkey.0=
+namekeyargkey.1=Custom_Field
+querysort=DE:Custom_Field
+shortview=false
+valueexpression=IF(ISBLANK({DE:Custom_Field}),"","Click Here")
+valuefield=Custom_Field
+valueformat=HTML
