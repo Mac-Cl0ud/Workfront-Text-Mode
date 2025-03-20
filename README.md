@@ -64,3 +64,22 @@ valueexpression=IF({endDate}>$$TODAY,CONCAT({startDate}," - ",{endDate}," "))
 valueformat=HTML
 ```
 https://github.com/Mac-Cl0ud/Workfront-Text-Mode/blob/main/upcoming_time_off_in_user_report
+
+## Friendly URL
+
+Add this column to a report to display a friendly version of a URL captured in a custom field.
+
+```
+displayname=COLUMN HEADER
+link.url=DE:Custom_Field
+linkedname=
+namekey=view.relatedcolumn
+namekeyargkey.0=
+namekeyargkey.1=Custom_Field
+querysort=DE:Custom_Field
+shortview=false
+valueexpression=IF(ISBLANK({DE:Custom_Field}),"","Click Here")
+valuefield=Custom_Field
+valueformat=HTML
+```
+Credit: [Adobe Experience League](https://experienceleaguecommunities.adobe.com/t5/workfront-questions/text-mode-friendly-url-displaying-when-url-hasn-t-been/m-p/515660])
