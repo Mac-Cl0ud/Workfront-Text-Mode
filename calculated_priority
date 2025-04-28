@@ -1,0 +1,5 @@
+##Calculated Priority
+Handy Calculated Field to Determine Priority based on how near the Planned Completion Date is with a manual "Priority" override. 
+Built on a Task Object
+
+IF({priority}<1,IF(WEEKDAYDIFF($$TODAY,{plannedCompletionDate})<0,"5 - None",IF(WEEKDAYDIFF($$TODAY,{plannedCompletionDate})=0,"1 - Urgent",IF(WEEKDAYDIFF($$TODAY,{plannedCompletionDate})=1,"2 - High",IF(WEEKDAYDIFF($$TODAY,{plannedCompletionDate})=2,"3 - Normal","4 - Low")))),IF({priority}=1,"1 - Urgent",IF({priority}=2,"2 - High",IF({priority}=3,"3 - Normal",IF({priority}=4,"4 - Low",{priority})))))
